@@ -18,7 +18,7 @@ define([
          // Auth and App exist as part of a Dozuki Guide Edit page, so this will not work
          // outside that context.
          Auth.required({
-            message: "<?= _js('Log in to save step data.') ?>",
+            message: _js('Log in to save step data.'),
             onAuthorize: function() {
                that.model.save(null, {
                   success: function(model, response, options) {
