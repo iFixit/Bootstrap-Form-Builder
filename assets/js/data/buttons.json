@@ -18,5 +18,25 @@
         "value": true
       }
     }
+  },
+  {
+    "title": "Video",
+    "fields": {
+      "field_guid": {
+        "label": "ID / Name",
+        "type": "hidden",
+        "value": "temporary-id"
+      },
+      "label": {
+        "label": "Label Text",
+        "type": "input",
+        "value": "Video Input"
+      },
+      "required": {
+        "label": "Required",
+        "type": "checkbox",
+        "value": true
+      }
+    }
   }
 ]
