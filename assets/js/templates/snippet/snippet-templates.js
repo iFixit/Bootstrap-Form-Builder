@@ -4,6 +4,7 @@ define(function(require) {
   , appendedcheckbox         = require('text!templates/snippet/appendedcheckbox.html')
   , appendedtext             = require('text!templates/snippet/appendedtext.html')
   , image                    = require('text!templates/snippet/image.html')
+  , video                    = require('text!templates/snippet/video.html')
   , button                   = require('text!templates/snippet/button.html')
   , buttondouble             = require('text!templates/snippet/buttondouble.html')
   , buttondropdown           = require('text!templates/snippet/buttondropdown.html')
@@ -28,6 +29,7 @@ define(function(require) {
     , appendedcheckbox         : appendedcheckbox
     , appendedtext             : appendedtext
     , image                    : image
+    , video                    : video
     , singlebutton             : button
     , doublebutton             : buttondouble
     , buttondropdown           : buttondropdown
