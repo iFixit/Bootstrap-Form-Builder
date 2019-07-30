@@ -7,7 +7,7 @@
       value  : temporary-id
     label:
       label  : Label
-      type   : input
+      type   : textarea
       value  : Radio Buttons
     options:
       label  : Options
