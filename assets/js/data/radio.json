@@ -9,7 +9,7 @@
       },
       "label": {
         "label": "Label",
-        "type": "textarea",
+        "type": "textarea-label",
         "value": "Radio Buttons"
       },
       "options": {
