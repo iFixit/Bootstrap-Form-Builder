@@ -6,6 +6,7 @@ define([
   , "text!templates/popover/popover-select.html"
   , "text!templates/popover/popover-textarea.html"
   , "text!templates/popover/popover-textarea-split.html"
+  , "text!templates/popover/popover-textarea-label.html"
   , "text!templates/popover/popover-checkbox.html"
   , "text!templates/popover/popover-hidden.html"
   , "templates/snippet/snippet-templates"
@@ -18,6 +19,7 @@ define([
   , _PopoverSelect
   , _PopoverTextArea
   , _PopoverTextAreaSplit
+  , _PopoverTextAreaLabel
   , _PopoverCheckbox
   , _PopoverHidden
   , _snippetTemplates
@@ -32,6 +34,7 @@ define([
         , "number" : _.template(_PopoverNumber)
         , "select" : _.template(_PopoverSelect)
         , "textarea" : _.template(_PopoverTextArea)
+        , "textarea-label": _.template(_PopoverTextAreaLabel)
         , "textarea-split" : _.template(_PopoverTextAreaSplit)
         , "checkbox" : _.template(_PopoverCheckbox)
         , "hidden" : _.template(_PopoverHidden)

@@ -67,6 +67,7 @@ define([
             case "input":
             case "number":
             case "textarea":
+            case "textarea-label":
               boundContext.model.setField(name, $e.val());
               break;
             case "textarea-split":
