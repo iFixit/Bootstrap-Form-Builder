@@ -20,10 +20,12 @@ define([
          Auth.required({
             message: _js('Log in to save step data.'),
             onAuthorize: function() {
+               StatusPanel.loading(_js("Saving..."), 100);
                that.model.save(null, {
                   success: function(model, response, options) {
                      App.stepForm = response;
                      $('.formBuilderSave').addClass('buttonLinkDisabled').prop('disabled', 1);
+                     window.location = App.stepApi.baseStepEditPath + App.stepid;
                   }
                });
             }
