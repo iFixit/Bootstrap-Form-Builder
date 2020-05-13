@@ -43,9 +43,8 @@ define([
       var myFormBits = $(this.$el.find(".component"));
       var topelement = _.find(myFormBits, function(renderedSnippet) {
         var bottomOffset = $(renderedSnippet).offset().top + $(renderedSnippet).height();
-        // As far as I can tell, 90 is a totally arbitrary pixel offset. Maybe
-        // it's assuming the average snippet is approx. 90 pixels high?
-        var cursorY = eventY - 90;
+        // 30 is an arbitrary pixel offset that experimentally felt right.
+        var cursorY = eventY - 30;
 
         if (bottomOffset > cursorY) {
           return true;
