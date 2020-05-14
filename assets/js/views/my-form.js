@@ -45,7 +45,7 @@ define([
       var cursorY = eventY - 30;
 
       // If cursor is above the top snippet, there are no snippets to drop it under.
-      if (cursorY < $(myFormBits[0]).offset().top) {
+      if (myFormBits.length === 0 || cursorY < $(myFormBits[0]).offset().top) {
         return null;
       }
 
