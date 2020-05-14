@@ -46,7 +46,7 @@ define([
 
       // If cursor is above the top snippet, there are no snippets to drop it under.
       if (cursorY < $(myFormBits[0]).offset().top) {
-         return null;
+        return null;
       }
 
       var topelement = _.find(myFormBits, function(renderedSnippet) {
