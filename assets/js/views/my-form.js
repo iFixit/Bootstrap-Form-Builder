@@ -41,8 +41,18 @@ define([
 
     , getBottomAbove: function(eventY){
       var myFormBits = $(this.$el.find(".component"));
+      // 30 is an arbitrary pixel offset that experimentally felt right.
+      var cursorY = eventY - 30;
+
+      // If cursor is above the top snippet, there are no snippets to drop it under.
+      if (myFormBits.length === 0 || cursorY < $(myFormBits[0]).offset().top) {
+        return null;
+      }
+
       var topelement = _.find(myFormBits, function(renderedSnippet) {
-        if (($(renderedSnippet).position().top + $(renderedSnippet).height()) > eventY  - 90) {
+        var bottomOffset = $(renderedSnippet).offset().top + $(renderedSnippet).height();
+
+        if (bottomOffset > cursorY) {
           return true;
         }
         else {
@@ -52,7 +62,7 @@ define([
       if (topelement){
         return topelement;
       } else {
-        return myFormBits[0];
+        return null;
       }
     }
 
@@ -68,7 +78,10 @@ define([
           mouseEvent.pageX < (this.$build.width() + this.$build.offset().left) &&
           mouseEvent.pageY >= this.$build.offset().top &&
           mouseEvent.pageY < (this.$build.height() + this.$build.offset().top)){
-        $(this.getBottomAbove(mouseEvent.pageY)).addClass("target");
+        var snippet = this.getBottomAbove(mouseEvent.pageY);
+        if (snippet) {
+          $(snippet).addClass("target");
+        }
       } else {
         $(".target").removeClass("target");
       }
@@ -79,7 +92,10 @@ define([
          mouseEvent.pageX < (this.$build.width() + this.$build.offset().left) &&
          mouseEvent.pageY >= this.$build.offset().top &&
          mouseEvent.pageY < (this.$build.height() + this.$build.offset().top)) {
-        var index = $(".target").index();
+        // If no target, drop the snippet in the topmost position.
+        var target = $(".target");
+        var index = target ? target.index() : -1;
+
         $(".target").removeClass("target");
         this.model.snippets.add(model,{at: index+1});
       } else {
