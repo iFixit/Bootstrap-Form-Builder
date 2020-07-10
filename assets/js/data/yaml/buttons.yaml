@@ -7,7 +7,7 @@
       value  : temporary-id
     label:
       label  : Label Text
-      type   : input
+      type   : textarea-label
       value  : Image Input
     required:
       label  : Required
@@ -22,7 +22,7 @@
       value  : temporary-id
     label:
       label  : Label Text
-      type   : input
+      type   : textarea-label
       value  : Video Input
     required:
       label  : Required

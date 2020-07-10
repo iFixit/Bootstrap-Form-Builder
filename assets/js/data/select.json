@@ -9,7 +9,7 @@
       },
       "label": {
         "label": "Label",
-        "type": "input",
+        "type": "textarea-label",
         "value": "Dropdown Input"
       },
       "required": {

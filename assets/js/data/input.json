@@ -9,7 +9,7 @@
       },
       "label": {
         "label": "Label",
-        "type": "input",
+        "type": "textarea-label",
         "value": "Text Input"
       },
       "placeholder": {
@@ -35,7 +35,7 @@
       },
       "label": {
         "label": "Label",
-        "type": "input",
+        "type": "textarea-label",
         "value": "Numeric Input"
       },
       "placeholder": {
@@ -105,7 +105,7 @@
       },
       "label": {
         "label": "Label",
-        "type": "input",
+        "type": "textarea-label",
         "value": "Multi-line Text Area"
       },
       "textarea": {
@@ -130,7 +130,7 @@
       },
       "label": {
         "label": "Label",
-        "type": "input",
+        "type": "textarea-label",
         "value": "Checkbox"
       },
       "placeholder": {
