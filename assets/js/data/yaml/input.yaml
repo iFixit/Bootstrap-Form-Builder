@@ -7,7 +7,7 @@
       value  : temporary-id
     label:
       label  : Label
-      type   : input
+      type   : textarea-label
       value  : Text Input
     placeholder:
       label  : Example
@@ -27,7 +27,7 @@
       value  : temporary-id
     label:
       label  : Label
-      type   : input
+      type   : textarea-label
       value  : Numeric Input
     placeholder:
       label  : Example
@@ -104,7 +104,7 @@
       value  : temporary-id
     label:
       label  : Label
-      type   : input
+      type   : textarea-label
       value  : Multi-line Text Area
     textarea:
       label  : Starting Text
@@ -122,10 +122,10 @@
       type  : hidden
       value : temporary-id
     label:
-      label: Label
-      type : input
+      label : Label
+      type  : textarea-label
       value : Checkbox
     placeholder:
       label : Default
-      type : checkbox
+      type  : checkbox
       value : false

@@ -9,7 +9,7 @@
       },
       "label": {
         "label": "Label Text",
-        "type": "input",
+        "type": "textarea-label",
         "value": "Image Input"
       },
       "required": {
@@ -29,7 +29,7 @@
       },
       "label": {
         "label": "Label Text",
-        "type": "input",
+        "type": "textarea-label",
         "value": "Video Input"
       },
       "required": {
