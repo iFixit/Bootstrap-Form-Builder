@@ -28,6 +28,21 @@
       label  : Required
       type   : checkbox
       value  : true
+-
+  title  : Document
+  fields :
+    field_guid:
+      label  : ID / Name
+      type   : hidden
+      value  : temporary-id
+    label:
+      label  : Label Text
+      type   : textarea-label
+      value  : Document Input
+    required:
+      label  : Required
+      type   : checkbox
+      value  : true
 #-
 #  title  : Single Button
 #  fields :

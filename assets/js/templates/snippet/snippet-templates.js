@@ -5,6 +5,7 @@ define(function(require) {
   , appendedtext             = require('text!templates/snippet/appendedtext.html')
   , image                    = require('text!templates/snippet/image.html')
   , video                    = require('text!templates/snippet/video.html')
+  , document                 = require('text!templates/snippet/document.html')
   , button                   = require('text!templates/snippet/button.html')
   , buttondouble             = require('text!templates/snippet/buttondouble.html')
   , buttondropdown           = require('text!templates/snippet/buttondropdown.html')
@@ -30,6 +31,7 @@ define(function(require) {
     , appendedtext             : appendedtext
     , image                    : image
     , video                    : video
+    , document                 : document
     , singlebutton             : button
     , doublebutton             : buttondouble
     , buttondropdown           : buttondropdown
